@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.background {
+position: fixed;
+width: 100%;
+height: 100%;
+background: linear-gradient(180deg, #1C1B30 0%, #4035BE 96.15%);
+}
+
+
+.bloco {
+    background: linear-gradient(#4035BE, #1C1B30);
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: -13px;
+    box-shadow: 6px 6px 6px 6px rgba(29, 162, 203, 0.093);
+    font-size: 30px;
+    color: rgba(35, 39, 82, 0.71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloco > h2 {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input1 {
+    border-radius: 5px;
+    padding: 20px;
+    width: 270px;
+    border: 3px solid blue;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.input2 {
+    border-radius: 5px;
+    padding: 20px;
+    width: 270px;
+    border: 3px solid blue;
+    margin-bottom: 30px;
+}
+
+.input3 {
+    border-radius: 5px;
+    padding: 20px;
+    width: 270px;
+    border: 3px solid blue;
+    margin-bottom: 30px;
+}
+
+.input4 {
+    border-radius: 5px;
+    padding: 20px;
+    width: 270px;
+    border: 3px solid blue;
+}
+
+.botoes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao {
+    margin-top: 30px;
+    border-radius: 7px;
+    width: 90px;
+    background-color: rgb(29, 210, 241);
+    border: 3px solid rgb(59, 62, 226);
+    color: rgba(0, 0, 255, 0.453);
+    height: 40px;
+}
+
+.botao:hover {
+    margin-top: 30px;
+    border-radius: 7px;
+    width: 90px;
+    background-color: rgba(29, 209, 241, 0.551);
+    border: 3px solid rgb(59, 62, 226);
+    color: blue;
+    height: 40px;
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+
+.botao2 {
+    margin-top: 30px;
+    border-radius: 7px;
+    width: 150px;
+    background-color: rgb(29, 210, 241);
+    border: 3px solid rgb(59, 62, 226);
+    color: rgba(0, 0, 255, 0.453);
+    height: 40px;
+}
+
+.botao2:hover {
+    margin-top: 30px;
+    border-radius: 7px;
+    width: 145px;
+    background-color: rgba(29, 209, 241, 0.551);
+    border: 3px solid rgb(59, 62, 226);
+    color: blue;
+    height: 40px;
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+@media only screen and (max-device-width: 900px) {
+     .background {
+        width: 100%;
+     } 
+    }
