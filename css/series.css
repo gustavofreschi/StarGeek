@@ -1,7 +1,9 @@
 body {
-    background-color: #211847;
+    background: rgb(3,3,88);
+    background: linear-gradient(180deg, rgba(3,3,88,1) 39%, rgba(12,32,93,1) 72%);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -12,13 +14,16 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
     background-color: #3c2a8b;
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
+    padding-left: 2vw;
     box-shadow: 3px 3px 3px black;
     align-items: center;
-    height: 90px;
+    height: 6vw;
+    width: 99.9vw;
 
 }
 
@@ -31,37 +36,106 @@ header {
     margin-right: 900px;
 }
 
+body, html {
+    overflow-x: hidden !important;
+    }
+
+    @media (max-width: 1024px) {
+        body, html {
+        overflow-x: hidden!important;
+        }
+
+        header {
+            height: 10vw;
+        }
+
+        main > .famous {
+            padding: 10vw;
+            padding-left: 35vw;
+        }
+
+        main > .famous > img {
+            width: 25vw;
+        }
+
+        main > .famous > img:hover {
+            width: 25vw;
+        }
+
+        main > .aventura {
+            padding: 10vw;
+            padding-left: 35vw;
+        }
+
+        main > .aventura > img {
+            width: 25vw;
+        }
+
+        main > .aventura> img:hover {
+            width: 25vw;
+        }
+
+       body > h2 {
+        margin-top: 20vw;
+       }
+
+       main > .suspense {
+        padding: 10vw;
+        padding-left: 35vw;
+       }
+
+       main > .suspense > img {
+        width: 25vw;
+       }
+
+       main > .suspense > img:hover {
+        width: 25vw;
+       }
+
+       main > .ficcao {
+        padding: 10vw;
+        padding-left: 35vw;
+       }
+
+       main > .ficcao > img {
+        width: 25vw;
+       }
+       
+       main > .ficcao > img:hover {
+        width: 25vw;
+       }
+
+    }
 
 
 
-
-li {
-    list-style: none;
-    padding: 10px;
-}
+        li {
+            list-style: none;
+            padding: 1vw;
+        }
 
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    margin: 20px;
+    margin: 1.5vw;
 }
 
 a:hover {
     text-decoration-line: underline;
     color: rgb(215, 238, 14);
     font-weight: 600;
-    margin: 20px;
+    margin: 1.5vw;
 }
 
 
 .logo-menu > a > img {
-    height: 80px;
+    height: 6vw;
     margin-left: -1vw;
 }
 
 .logo-menu > a > img:hover {
-    height: 80px;
+    height: 6vw;
     margin-left: -1vw;
     transform: scale(0.9);
     transition-duration: 0.5s;
@@ -70,7 +144,7 @@ a:hover {
 h2 {
     color: white;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 7vw;
     font-size: 40px;
 }
 
@@ -80,13 +154,13 @@ h2 {
 .famous{
 
     background-color: #69696957;
-    margin-top: 5px;
+    margin-top: 2vw;
     padding: 20px;
     display: flex;
     justify-content: center;
     display: flex;
     overflow-x: scroll;
-    padding-left: 550px;
+    padding-left: 60vw;
     box-shadow: 1px 1px 1px black;
 
 }
@@ -96,13 +170,13 @@ h2 {
 }
 
 .famous > img {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     border: 2px solid black;
 }
 
 .famous > img:hover {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     transform: scale(1.02);
     transition-duration: 0.8s;
@@ -119,24 +193,24 @@ main > h3 {
 
 .aventura {
     background-color: #69696957;
-    margin-top: 30px;
+    margin-top: 2vw;
     padding: 20px;
     display: flex;
     justify-content: center;
     display: flex;
     overflow-x: scroll;
-    padding-left: 550px;
+    padding-left: 60vw;
     box-shadow: 1px 1px 1px black;
 }
 
 .aventura > img {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     border: 2px solid black;
 }
 
 .aventura > img:hover {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     transform: scale(1.02);
     transition-duration: 0.8s;
@@ -151,13 +225,13 @@ main > h3 {
 .suspense{
 
     background-color: #69696957;
-    margin-top: 30px;
+    margin-top: 2vw;
     padding: 20px;
     display: flex;
     justify-content: center;
     display: flex;
     overflow-x: scroll;
-    padding-left: 550px;
+    padding-left: 60vw;
     box-shadow: 1px 1px 1px black;
 
 }
@@ -167,13 +241,13 @@ main > h3 {
 }
 
 .suspense > img {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     border: 2px solid black;
 }
 
 .suspense > img:hover {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     transform: scale(1.02);
     transition-duration: 0.8s;
@@ -184,13 +258,13 @@ main > h3 {
 .ficcao{
 
     background-color: #69696957;
-    margin-top: 30px;
+    margin-top: 2vw;
     padding: 20px;
     display: flex;
     justify-content: center;
     display: flex;
     overflow-x: scroll;
-    padding-left: 550px;
+    padding-left: 60vw;
     box-shadow: 1px 1px 1px black;
 
 }
@@ -200,13 +274,13 @@ main > h3 {
 }
 
 .ficcao > img {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     border: 2px solid black;
 }
 
 .ficcao > img:hover {
-    width: 200px;
+    width: 13vw;
     margin-left: 20vh;
     transform: scale(1.02);
     transition-duration: 0.8s;
@@ -221,17 +295,35 @@ footer {
     justify-content: center;
     box-shadow: 3px 3px 3px black;
     align-items: center;
-    height: 90px;
+    height: 9vw;
     box-shadow: 0px 0px 5px 0px black;
-    margin-top: 100px;
+    width: 100vw;
+    margin-top: 5vw;
+
 }
 
-footer > a {
+footer>a {
+    border: 2px solid white;
+    border-radius: 15px;
     color: white;
-    margin: 100px;
+    margin: 2vw;
+    align-items: center;
+    padding: 1vw;
 }
 
-footer > a:hover {
+footer>a:hover {
+    background-color: black;
     color: white;
-    margin: 100px;
+    margin: 2vw;
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+    text-decoration-line: none;
+    box-shadow: 0px 0px 10px black;
+}
+
+.vertical {
+    border-left: 2px solid white;
+    height: 6vw;
+    justify-content: center;
+
 }

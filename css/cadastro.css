@@ -13,6 +13,13 @@ a {
     justify-content: center;
 }
 
+@media (max-width: 1024px) {
+    body, html {
+    overflow-x: hidden!important;
+    }
+
+
+}
 
 .logo {
     display: flex;

@@ -14,7 +14,6 @@ body {
 }
 
 
-
 main>h1 {
     font-family: 'Inter';
     font-style: normal;
@@ -52,14 +51,14 @@ main>h3 {
     border-radius: 16px;
     color: #8986FF;
     text-decoration: none;
-    width: 700px;
-    height: 80px;
+    width: 50vw;
+    height: 5vw;
     margin: 0 auto;
     margin-top: 60px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5vw;
     line-height: 73px;
 }
 
@@ -73,19 +72,56 @@ main>h3 {
     border-radius: 16px;
     color: #8986FF;
     text-decoration: none;
-    width: 700px;
-    height: 80px;
+    width: 50vw;
+    height: 5vw;
     margin: 0 auto;
     margin-top: 60px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5vw;
     line-height: 73px;
     transform: scale(0.9);
     transition-duration: 0.5s;
 }
 
+body, html {
+    overflow-x: hidden !important;
+    }
+
+    @media (max-width: 1024px) {
+        body, html {
+        overflow-x: hidden!important;
+        }
+
+        .botao2 {
+            width: 95vw;
+            height: 15vw;
+            font-size: 4vw;
+        }
+
+        .botao2:hover {
+            width: 95vw;
+            height: 15vw;
+            font-size: 4vw;
+        }
+
+        .planos {
+            flex-direction: column;
+        }
+        
+
+        body > .assinatura {
+
+            margin-top: 50vw;
+            font-size: 10vw;
+        }
+
+        body > main > h3 {
+            margin-top: 46vw;
+        }
+
+    }
 
 .logo {
     height: 160px;
@@ -156,7 +192,7 @@ main>h3 {
     margin-top: 70px;
     box-shadow: 6px 6px 6px 6px rgba(29, 162, 203, 0.093);
     font-size: 30px;
-    color: rgb(35, 39, 82);
+    color: rgba(255, 255, 255, 0.508);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +210,7 @@ main>h3 {
     margin-top: 70px;
     box-shadow: 0px 0px 50px 0px rgb(255, 255, 255);
     font-size: 30px;
-    color: rgb(35, 39, 82);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,11 +237,11 @@ ul {
 
 
 .assinatura {
-margin-top: 200px;
+margin-top: 15vw;
 font-family: 'Gill Sans MT';
 font-style: normal;
 font-weight: 700;
-font-size: 68px;
+font-size: 5.5vw;
 line-height: 79px;
 text-align: center;
 
@@ -223,7 +259,7 @@ color: #8986FF;
     margin-top: 70px;
     box-shadow: 6px 6px 6px 6px rgba(29, 162, 203, 0.093);
     font-size: 30px;
-    color: rgb(35, 39, 82);
+    color: rgba(24, 38, 184, 0.648);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,7 +276,7 @@ color: #8986FF;
     margin-top: 70px;
     box-shadow: 0px 0px 50px 0px rgb(6, 22, 241);
     font-size: 30px;
-    color: rgb(35, 39, 82);
+    color: rgba(0, 21, 255, 0.949);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,7 +307,7 @@ color: #8986FF;
     margin-top: 70px;
     box-shadow: 6px 6px 6px 6px rgba(29, 162, 203, 0.093);
     font-size: 30px;
-    color: rgb(35, 39, 82);
+    color: rgba(225, 255, 1, 0.448);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,7 +324,7 @@ color: #8986FF;
     margin-top: 70px;
     box-shadow: 0px 0px 50px 0px rgb(244, 248, 3);
     font-size: 30px;
-    color: rgb(35, 39, 82);
+    color: rgba(225, 255, 1, 0.771);
     display: flex;
     flex-direction: column;
     justify-content: center;
