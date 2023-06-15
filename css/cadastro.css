@@ -18,6 +18,17 @@ a {
     overflow-x: hidden!important;
     }
 
+    .background > .bloco {
+        height: 550px;
+        width: 350px;
+    }
+
+    .background > .logo > img {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 45px;
+    }
+
 
 }
 
@@ -42,15 +53,17 @@ background: linear-gradient(180deg, #1C1B30 0%, #4035BE 96.15%);
 
 
 .bloco {
-    background: linear-gradient(#4035BE, #1C1B30);
-    width: 450px;
-    height: 600px;
+    background-color: rgba(0, 0, 0, 0.682);
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    max-height: 600px;
     border-radius: 30px;
     margin: 0 auto;
     margin-top: -13px;
     box-shadow: 6px 6px 6px 6px rgba(29, 162, 203, 0.093);
     font-size: 30px;
-    color: rgba(35, 39, 82, 0.71);
+    color: rgba(81, 96, 250, 0.844);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,12 +143,14 @@ background: linear-gradient(180deg, #1C1B30 0%, #4035BE 96.15%);
 
 .botao2 {
     margin-top: 30px;
+    font-weight: 600;
     border-radius: 7px;
     width: 150px;
     background-color: rgb(29, 210, 241);
     border: 3px solid rgb(59, 62, 226);
     color: rgba(0, 0, 255, 0.453);
     height: 40px;
+    cursor: pointer;
 }
 
 .botao2:hover {

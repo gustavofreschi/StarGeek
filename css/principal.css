@@ -94,6 +94,19 @@ html {
     width: 25vw;
    }
 
+   main > .catalogados > #catalogo {
+    width: 30vw;
+    margin-left: -240px;
+   }
+
+   header > nav > .menu > li > #cadastromidia {
+    width: 70px;
+    height: 39px;
+   }
+
+   main > .flex > #remove {
+    margin-right: 20px;
+   }
 
    }
 
@@ -120,6 +133,22 @@ a {
     color: rgb(255, 255, 255);
     font-weight: 600;
     margin: 1.5vw;
+}
+
+#cadastromidia {
+    width: 150px;
+    padding: 1.5px;
+    border-radius: 5px;
+    border: 3px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+#cadastromidia:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 
 a:hover {
@@ -216,11 +245,40 @@ content: url(img/tlougif2.gif);
     box-shadow: 0px 0px 0px 2px black;
 }
 
-main>h3 {
+main> .flex >h3 {
     color: white;
     font-size: 30px;
     margin-top: 25vh;
     margin-left: 20px;
+    margin-right: 20px;
+}
+
+main > h3 {
+    color: white;
+    font-size: 30px;
+    margin-top: 25vh;
+    margin-left: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+#remove {
+    height: 30px;
+    width: 150px;
+    margin-top: 190px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#remove:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
 
 .series {
@@ -326,3 +384,48 @@ footer>a:hover {
     justify-content: center;
 
 }
+
+.poster {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 300px;
+    margin: 0 10px;
+    border: 2px solid black;
+    user-select: none;
+}
+
+.poster:hover {
+    transform: scale(1.02);
+    transition-duration: 0.8s;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 2px black;
+}
+
+.catalogados {
+    background-color: #69696957;
+    margin-top: 2vw;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    box-shadow: 1px 1px 1px black;
+    white-space: nowrap;
+}
+
+.catalogados::-webkit-scrollbar {
+    display: none
+}
+
+.trash {
+    height: 35px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.trash:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+

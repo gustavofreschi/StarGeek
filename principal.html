@@ -7,9 +7,10 @@
     <title>StarGeek</title>
     <link rel="icon" href="img/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/principal.css">
+    
 
 </head>
-<body>
+<body onload="FilmeCadastrado()">
     
     <header>
 
@@ -21,7 +22,8 @@
                 <li><a href="series.html">Séries</a></li>
                 <li><a href="animes.html">Animes</a></li>
                 <li><a href="livros.html">Livros</a></li>
-                <li><a href="#"></a></li>
+                <li><button id="cadastromidia" onclick="midia()">Cadastrar mídia</button></li>
+                
             </ul>
 
 
@@ -78,6 +80,17 @@
             <img src="img/chainsaw.jpg">
         </div>
 
+        <div class="flex">
+            <h3>Filmes Catalogados</h3>
+        </div>
+        
+        
+        <div class="catalogados">
+            <div id="catalogo"></div>
+        </div>
+
+        
+
 
     </main>
 
@@ -93,4 +106,8 @@
 
 
 </body>
+
+<script src="JS/href.js"></script>
+<script src="JS/midia.js"></script>
+
 </html>

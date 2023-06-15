@@ -105,6 +105,11 @@ body, html {
         width: 25vw;
        }
 
+       header > nav > .menu > li > #cadastromidia {
+        width: 70px;
+        height: 39px;
+       }
+
     }
 
 
@@ -326,4 +331,20 @@ footer>a:hover {
     height: 6vw;
     justify-content: center;
 
+}
+
+#cadastromidia {
+    width: 150px;
+    padding: 1.5px;
+    border-radius: 5px;
+    border: 3px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+#cadastromidia:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
