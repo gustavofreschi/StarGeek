@@ -94,6 +94,15 @@ html {
     width: 25vw;
    }
 
+   header > nav > .menu > li > #cadastromidia {
+    width: 70px;
+    height: 39px;
+   }
+
+   main > .bloco > .botoes {
+    display: flex;
+    justify-content: space-between;
+   }
 
 
    }
