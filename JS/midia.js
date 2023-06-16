@@ -40,7 +40,7 @@ function CadastrarFilme() {
 function FilmeCadastrado() {
     document.getElementById('catalogo').innerHTML = ''
     movies.forEach((item, indice) => {
-        document.getElementById('catalogo').innerHTML += `<img class='poster' src='${item.imagem}'> <img onclick="Excluir(${indice})" class="trash" src="img/trash2.png">`
+        document.getElementById('catalogo').innerHTML += `<img onclick="Info('${item.movie}', '${item.resumo}')" class='poster' src='${item.imagem}'> <img onclick="Excluir(${indice})" class="trash" src="img/trash2.png">`
     })
     
 }
@@ -67,6 +67,16 @@ function Excluir(indice) {
     localStorage.setItem( 'bdMidia', JSON.stringify(movies) )
     FilmeCadastrado()
 }
+
+function Info(nome, resume) {
+    document.getElementById('informacao').innerHTML = `<div class="block"><strong>${nome}</strong>  <p>${resume}</p> <img onclick="CloseDiv()" id="btn" src="https://static.vecteezy.com/system/resources/thumbnails/009/344/496/small/x-transparent-free-png.png"></div>`
+    document.getElementById('informacao').style.display = 'block'
+}
+
+function CloseDiv() {
+    document.getElementById('informacao').style.display = 'none'
+}
+
 
 
 

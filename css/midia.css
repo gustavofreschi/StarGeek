@@ -99,10 +99,7 @@ html {
     height: 39px;
    }
 
-   main > .bloco > .botoes {
-    display: flex;
-    justify-content: space-between;
-   }
+   
 
 
    }
@@ -340,4 +337,5 @@ strong {
     align-items: center;
     justify-content: space-around;
 }
+
 

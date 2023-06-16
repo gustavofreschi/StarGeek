@@ -108,6 +108,10 @@ html {
     margin-right: 20px;
    }
 
+   body > .centro > #informacao > .block {
+    width: 355px;
+   }
+
    }
 
 
@@ -428,4 +432,48 @@ footer>a:hover {
     transition-duration: 0.5s;
 }
 
+#container {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+}
 
+
+.block {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(18, 163, 146, 0.629);
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    border: 4px solid black;
+    display: block;
+    text-align: center;
+}
+
+.block > strong {
+    font-size: 1.4em;
+}
+
+.block > p {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn {
+   height: 40px;
+   margin-top: 10px;
+   cursor: pointer;
+}
+
+#btn:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
